@@ -55,8 +55,8 @@ LOCAL_C_INCLUDES += \
 	$(MY_ANDROID_ROOT)/frameworks/base/include \
 	$(MY_ANDROID_ROOT)/system/core/include
 
-LOCAL_SHARED_LIBRARIES := \
-	libnativehelper
+LOCAL_LDLIBS := -lnativehelper \
+				-L$(MY_ANDROID_ROOT)/out/target/product/generic/system/lib
 
 LOCAL_CFLAGS += -fvisibility=hidden 
 LOCAL_PRELINK_MODULE:=false
