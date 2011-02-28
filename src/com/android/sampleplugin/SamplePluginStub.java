@@ -101,7 +101,7 @@ public class SamplePluginStub implements PluginStub {
         gl.setRenderer(new CubeRenderer(true));
         // Use a surface format with an Alpha channel:
         gl.getHolder().setFormat(PixelFormat.TRANSLUCENT);
-        gl.setWindowType(WindowManager.LayoutParams.TYPE_APPLICATION_MEDIA_OVERLAY);
+        //~gl.setWindowType(WindowManager.LayoutParams.TYPE_APPLICATION_MEDIA_OVERLAY);
         
         
         video.setVideoPath("/sdcard/test_video.3gp");
